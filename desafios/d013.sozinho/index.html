@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Redes Socais</title>
+    <link rel="shortcut icon" href="pacote-d013/pacote-d013/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            position: relative;
+            background: black url('pacote-d013/pacote-d013/imagens/fundo-madeira.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        img, iframe {
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 50vh;
+            transform: translate(-50%, -50%);
+        }
+        
+        iframe {
+            position: absolute;
+            background-image: url('pacote-d013/pacote-d013/imagens/tela-home.jpg');
+            background-size: cover;
+            height: 478px;
+            width: 268px;
+        }
+
+        .apps {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            margin-left: 90vw;
+            margin-top: 10vh;
+            border-radius: 50%;
+            width: 50px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            
+        }
+
+        .apps:hover {
+            transition: 0.6s;
+            width: 55px;
+            border: 1px solid white;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.508);
+        }
+
+        .apps:hover {
+            transition: 0.8s;
+            border: 1.6px solid white;
+        }
+
+        #github {
+            margin-top: 20vh;
+        }
+
+        #insta {
+            margin-top: 30vh;
+        }
+
+        #facebook {
+            margin-top: 40vh;
+        }
+
+        #youtube {
+            margin-top: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cel">
+        <img src="pacote-d013/pacote-d013/imagens/frame-iphone.png" alt="">
+    </div>
+
+    <iframe src="" frameborder="" name="frame" referrerpolicy="no-referer" sandbox="allow-same-origin">
+        Seu dispositivo não é compatível
+    </iframe>
+
+
+    <div>
+        <a href="index.html"><img src="pacote-d013/pacote-d013/imagens/logo-home.jpg" alt="" class="apps"></a>
+
+        <a href="https://gustavoguanabara.github.io" target="frame"><img src="pacote-d013/pacote-d013/imagens/logo-github.jpg" alt="" class="apps" id="github"></a>
+    
+        <a href="https://www.instagram.com/cursoemvideo/?hl=pt" target="frame"><img src="pacote-d013/pacote-d013/imagens/logo-instagram.jpg" alt="" class="apps" id="insta"></a>
+
+        <a href="https://www.facebook.com/CursosEmVideo/" target="frame"><img src="pacote-d013/pacote-d013/imagens/logo-facebook.jpg" alt="" class="apps" id="facebook"></a>
+
+        <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="frame"><img src="pacote-d013/pacote-d013/imagens/logo-youtube.jpg" alt="" class="apps" id="youtube"></a>
+    </div>
+</body>
+</html>
