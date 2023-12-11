@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Estlo para impressora*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main article p {
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+main::after {
+    content: 'Artigo impresso';
+}

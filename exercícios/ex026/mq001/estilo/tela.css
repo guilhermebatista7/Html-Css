@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* Estilo para tela */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin: 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+main > article > p {
+    background-color: blueviolet;
+}
