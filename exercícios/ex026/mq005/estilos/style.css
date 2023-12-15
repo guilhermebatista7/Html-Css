@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Configurações principais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 60px;
+    background-color: #949494;
+}
+
+header > h1 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav {
+    background-color: #949494;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
+
+nav > ul > li {
+    display: inline;
+    background-color: #575757;
+    color: white;
+    padding: 8px;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 780px;
+    border-radius: 10px;
+    padding: 12px 10px 0px 10px;
+}
+
+main > h2 {
+    padding-bottom: 20px;
+}
+
+main > p {
+    padding-bottom: 20px;
+    text-indent: 10px;
+}
