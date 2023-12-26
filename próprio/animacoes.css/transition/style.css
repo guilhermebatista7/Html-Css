@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: seagreen;
+}
+
+div#container {
+    width: 90vw;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+div#content {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 10px;
+
+    /*transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 2s;*/
+
+    transition: all 2s ease 2s;
+}
+
+div#content:hover {
+    background-color: firebrick;
+    transform: translateX(200px);
+}

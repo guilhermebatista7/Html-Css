@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    div#container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin: 30px;
+        text-align: center;
+        
+        /*transform: rotate(40deg) scale(1, 0.8)    translate(90px);  */
+    }
+    
+    div#content {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        
+        transform: translate(50%, 50%);
+        top: 0%;
+        left: 0%;
+        
+    }
+
+    #content2 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        text-align: center;
+        margin: 30px;
+        transform: skew(.04turn, 0.01turn);
+    }
+
+    #content3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(212, 34, 34);
+        text-align: center;
+        margin: 30px;
+        transform: rotate(30deg) scale(0.75);
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="content">Box 1</div>
+    </div>
+
+    
+    <div id="content2">Box 2</div>
+
+    <div id="content3">Box 3</div>
+    
+</body>
+</html>
