@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        div { 
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        div#icaixa1 {
+            animation-name: correr;
+            animation-duration: 3s;
+            animation-fill-mode: backwards;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+        }
+
+        div#icaixa2 {
+            animation-name: correr;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+
+        div#icaixa3 {
+            animation-name: correr;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-delay: 2s;
+        }
+
+        @keyframes correr {
+            from {transform: translateX(100px);}
+            to {transform: translateX(400px);}
+        }
+    </style>
+</head>
+<body>
+    <div id="icaixa1" class="caixa1">Box</div>
+    <div id="icaixa2" class="caixa1">Box</div>
+    <div id="icaixa3" class="caixa1">Box</div>
+</body>
+</html>
