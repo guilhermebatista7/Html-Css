@@ -23,21 +23,43 @@
 
         div#icaixa2 {
             animation-name: correr;
-            animation-duration: 3s;
+            animation-duration: 1.5s;
             animation-fill-mode: forwards;
             animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-out;
         }
 
+        /*Shorthand animetion:
+        
+        animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+        
+        */
+
         div#icaixa3 {
-            animation-name: correr;
+            
+            /*animation-name: correr;
             animation-duration: 3s;
             animation-fill-mode: both;
             animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;*/
+
+            animation: correr 3s ease-in-out 2s infinite alternate-reverse both running, largura 3s 1.2s ease infinite;
         }
 
         @keyframes correr {
             from {transform: translateX(100px);}
             to {transform: translateX(400px);}
+        }
+
+        @keyframes largura {
+            0% {width: 40px;}
+            50% {width: 200px;}
+            100% {width: 40px;}
         }
     </style>
 </head>
