@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o position</title>
+    <style>
+        div.box {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            border: 3px solid black;
+        }
+
+        .item1, .item2, .item3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .item1 {
+            background-color: blueviolet;
+            position: relative;
+            left: 30px;
+            top: 30px;
+        }
+
+        .item2 {
+            background-color: chartreuse;
+            position: absolute;
+            right: 30px;
+            top: 108px;
+        }
+
+        .item3 {
+            background-color: orangered;
+            position: fixed;
+            top: 122px;
+            right: 250px;
+        }
+
+        .item4 {
+            background-color: rgba(25, 25, 112, 0.362);
+            position: sticky;
+            top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti aspernatur quasi quibusdam animi ea autem nobis quod deserunt quam minima? Nam culpa, natus quam ullam suscipit quo explicabo asperiores illum!</p>
+    <div class="item4">Propriedade position: fixed</div>
+    <div class="box">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</body>
+</html>
