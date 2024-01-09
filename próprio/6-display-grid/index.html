@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+</head>
+<style>
+
+    /* Grid Início:
+
+    .container {
+        background-color: gray;
+        border: 3px solid red;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 50px auto 10%;
+        height: 35vh;
+        grid-template-rows: 40px 80px;
+        gap: 5px;
+    }
+
+    .container > div {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid blue;
+    } */
+
+    /* TEMPLATE-AREAS */
+    /* .container {
+        background-color: gray;
+        border: 3px solid red;
+        padding: 15px;
+        display: grid;
+        gap: 5px;
+        grid-template-areas: 
+        'header header header header' 
+        'sidebar content content content'
+        'footer footer footer footer'
+    }
+
+    .container > div {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid blue;
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #sidebar {
+        grid-area: sidebar;
+        height: 50vh;
+    }
+
+    #content {
+        grid-area: content;
+        height: 50vh;
+        
+    }
+
+    #footer {
+        grid-area: footer;
+    } */
+
+
+    /* ALINHAMENTO */
+     .container {
+        background-color: gray;
+        border: 3px solid red;
+        padding: 15px;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* Horizontal */
+        justify-content: center;
+        /* Vertical */
+        align-items: center; 
+    }
+
+    .container > div {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid blue;
+    }
+
+</style>
+<body>
+    <!-- Grid início -->
+    <!-- <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div> -->
+
+    <!-- Template areas -->
+    <!-- <div class="container" id="template-areas">
+        <div id="header">
+            <p>Cabeçalho</p>
+        </div>
+        <div id="sidebar">
+            <p>Sidebar</p>
+        </div>
+        <div id="content">
+            <p>Conteúdo</p>
+        </div>
+        <div id="footer">
+            <p>Rodapé</p>
+        </div>
+    </div> -->
+
+    <!-- Alinhamento -->
+    <div class="container">
+        <div id="caixa1">A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </div>
+</body>
+</html>
